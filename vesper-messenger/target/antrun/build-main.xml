@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <mkdir dir="F:\vesper-messenger\target/app-input" />
+    <copy file="F:\vesper-messenger\target/vesper-messenger-1.0.0.jar" tofile="F:\vesper-messenger\target/app-input/app.jar" />
+  </target>
+</project>

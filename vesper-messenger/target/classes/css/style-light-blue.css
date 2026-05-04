@@ -1,0 +1,144 @@
+@import url("style.css");
+
+/* Светлая тема: меняем фон, стекло и цвета текста */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #F5F7FA, #DDE9FF);
+}
+
+.glass-panel, .main-glass-panel {
+    -fx-background-color: rgba(255, 255, 255, 0.22);
+    -fx-border-color: rgba(0, 0, 0, 0.06);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.10), 24, 0.3, 0, 12);
+}
+
+.header-title {
+    -fx-text-fill: #00BFFF;
+}
+
+.header-subtitle {
+    -fx-text-fill: #607D8B;
+}
+
+.secondary-button {
+    -fx-text-fill: #00BFFF;
+}
+
+.typing-label {
+    -fx-text-fill: #00BFFF;
+}
+
+.primary-button {
+    -fx-background-color: #00BFFF;
+    -fx-text-fill: black;
+}
+
+.primary-button:hover {
+    -fx-background-color: #33CCFF;
+    -fx-effect: dropshadow(gaussian, rgba(0, 191, 255, 0.25), 24, 0.3, 0, 0);
+}
+
+.vesper-text-field, .message-input {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-text-fill: #263238;
+    -fx-prompt-text-fill: #607D8B;
+    -fx-border-color: rgba(0, 0, 0, 0.08);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.08), 12, 0.2, 0, 6);
+}
+
+.text-area .content {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+}
+
+.text-area .text {
+    -fx-fill: #263238;
+}
+
+.messages-scroll {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-border-color: rgba(0, 0, 0, 0.08);
+    -fx-background-insets: 0;
+}
+
+.messages-placeholder {
+    -fx-background-color: rgba(0, 191, 255, 0.08);
+    -fx-text-fill: #607D8B;
+}
+
+.contacts-pane {
+    -fx-pref-width: 220;
+}
+
+.section-title {
+    -fx-text-fill: #546E7A;
+}
+
+.contacts-list {
+    -fx-border-color: rgba(0, 0, 0, 0.05);
+}
+
+.list-cell.contact-list-cell {
+    -fx-text-fill: #263238;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 8, 0.2, 0, 4);
+}
+
+.list-cell.contact-list-cell:hover {
+    -fx-background-color: rgba(0, 191, 255, 0.14);
+}
+
+.list-cell.contact-list-cell:selected {
+    -fx-background-color: rgba(0, 191, 255, 0.22);
+    -fx-text-fill: #0A1A1F;
+}
+
+.unread-badge {
+    -fx-background-color: rgba(0, 191, 255, 0.25);
+    -fx-text-fill: #0A1A1F;
+}
+
+.avatar-view, .contact-avatar-view, .contact-avatar-mini-view {
+    -fx-background-color: rgba(0, 191, 255, 0.10);
+}
+
+.message-bubble-in {
+    -fx-background-color: rgba(0, 191, 255, 0.22);
+    -fx-text-fill: #263238;
+}
+
+.message-bubble-out {
+    -fx-background-color: rgba(0, 191, 255, 0.75);
+    -fx-text-fill: black;
+}
+
+.message-time {
+    -fx-text-fill: #546E7A;
+}
+
+.theme-choice {
+    -fx-background-color: rgba(255, 255, 255, 0.75);
+    -fx-text-fill: #263238;
+    -fx-border-color: rgba(0, 0, 0, 0.08);
+}
+
+.accent-picker {
+    -fx-background-color: rgba(255, 255, 255, 0.85);
+    -fx-border-color: rgba(0, 0, 0, 0.08);
+    -fx-text-fill: #263238;
+}
+
+.chat-opacity-slider .track {
+    -fx-background-color: rgba(0, 191, 255, 0.18);
+}
+
+.chat-opacity-slider .thumb {
+    -fx-background-color: #00BFFF;
+}
+
+.chat-bg-overlay {
+    -fx-fill: rgba(245, 247, 250, 0.55);
+}
+
+.chat-bg-image {
+    -fx-opacity: 1.0;
+}
+

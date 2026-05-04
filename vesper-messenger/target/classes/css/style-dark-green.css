@@ -1,0 +1,106 @@
+@import url("style.css");
+
+/* Переопределяем акцент и часть UI в зелёной гамме */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #121212, #040604);
+}
+
+.header-title {
+    -fx-text-fill: #00FF7F;
+}
+
+.secondary-button {
+    -fx-text-fill: #00FF7F;
+}
+
+.secondary-button:hover {
+    -fx-text-fill: #33FFB0;
+}
+
+.typing-label {
+    -fx-text-fill: #00FF7F;
+}
+
+.primary-button {
+    -fx-background-color: #00FF7F;
+}
+
+.primary-button:hover {
+    -fx-background-color: #33FFB0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 127, 0.8), 24, 0.5, 0, 0);
+}
+
+.primary-button:pressed {
+    -fx-background-color: #00CC66;
+}
+
+.unread-badge {
+    -fx-background-color: rgba(0, 255, 127, 0.25);
+}
+
+.avatar-view, .contact-avatar-view, .contact-avatar-mini-view {
+    -fx-background-color: rgba(0, 255, 127, 0.12);
+}
+
+.online-dot.online {
+    -fx-background-color: rgba(76, 175, 80, 0.95);
+}
+
+.online-dot.offline {
+    -fx-background-color: rgba(96, 125, 139, 0.75);
+}
+
+.chat-bg-overlay {
+    -fx-fill: rgba(0, 0, 0, 0.45);
+}
+
+.chat-bg-image {
+    -fx-opacity: 1.0;
+}
+
+.list-cell.contact-list-cell:hover {
+    -fx-background-color: rgba(0, 255, 127, 0.2);
+}
+
+.list-cell.contact-list-cell:selected {
+    -fx-background-color: rgba(0, 255, 127, 0.35);
+}
+
+.message-bubble-in {
+    -fx-background-color: rgba(0, 255, 127, 0.28);
+}
+
+.message-bubble-out {
+    -fx-background-color: rgba(0, 255, 127, 0.72);
+}
+
+.message-input {
+    -fx-highlight-fill: rgba(0, 255, 127, 0.35);
+}
+
+.contact-name {
+    -fx-text-fill: #ECEFF1;
+}
+
+.theme-choice {
+    -fx-background-color: rgba(33, 33, 33, 0.9);
+    -fx-text-fill: #ECEFF1;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1;
+}
+
+.accent-picker {
+    -fx-background-color: rgba(33, 33, 33, 0.75);
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #ECEFF1;
+}
+
+.chat-opacity-slider .track {
+    -fx-background-color: rgba(0, 255, 127, 0.18);
+}
+
+.chat-opacity-slider .thumb {
+    -fx-background-color: #00FF7F;
+}
+

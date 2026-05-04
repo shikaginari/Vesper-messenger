@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<StackPane xmlns="http://javafx.com/javafx/21"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.vesper.app.controller.RegisterController"
+           styleClass="root-pane">
+
+    <AnchorPane prefWidth="520" prefHeight="360">
+        <children>
+            <VBox spacing="12.0" alignment="CENTER"
+                  layoutX="40.0" layoutY="30.0"
+                  prefWidth="440.0" prefHeight="300.0"
+                  styleClass="glass-panel">
+                <padding>
+                    <Insets top="24" right="32" bottom="24" left="32"/>
+                </padding>
+
+                <children>
+                    <Label text="Регистрация" styleClass="app-title"/>
+                    <Label text="Создайте новый аккаунт Vesper" styleClass="app-subtitle"/>
+
+                    <TextField fx:id="usernameField"
+                               promptText="Имя пользователя (логин)"
+                               styleClass="vesper-text-field"/>
+
+                    <TextField fx:id="displayNameField"
+                               promptText="Отображаемое имя"
+                               styleClass="vesper-text-field"/>
+
+                    <PasswordField fx:id="passwordField"
+                                   promptText="Пароль"
+                                   styleClass="vesper-text-field"/>
+
+                    <PasswordField fx:id="confirmPasswordField"
+                                   promptText="Повторите пароль"
+                                   styleClass="vesper-text-field"/>
+
+                    <HBox spacing="10">
+                        <children>
+                            <Button fx:id="registerButton"
+                                    text="Зарегистрироваться"
+                                    maxWidth="Infinity"
+                                    styleClass="primary-button"/>
+                            <Button fx:id="cancelButton"
+                                    text="Отмена"
+                                    maxWidth="Infinity"
+                                    styleClass="secondary-button"/>
+                        </children>
+                    </HBox>
+
+                    <ProgressIndicator fx:id="progressIndicator" prefWidth="32" prefHeight="32"/>
+
+                    <Label fx:id="statusLabel" styleClass="status-label"/>
+                </children>
+            </VBox>
+        </children>
+    </AnchorPane>
+</StackPane>
+

@@ -1,0 +1,327 @@
+/* Общий тёмный фон */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #121212, #050505);
+}
+
+/* Стеклянные панели (Glassmorphism) */
+.glass-panel, .main-glass-panel {
+    -fx-background-color: rgba(18, 18, 18, 0.7);
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.55), 24, 0.3, 0, 12);
+}
+
+/* Верхняя панель */
+.header-bar {
+    -fx-background-color: transparent;
+}
+
+.avatar-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 191, 255, 0.35), 10, 0.4, 0, 0);
+    -fx-background-radius: 999;
+    -fx-background-color: rgba(0, 191, 255, 0.12);
+}
+
+.header-title {
+    -fx-text-fill: #00BFFF;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.header-subtitle {
+    -fx-text-fill: #B0BEC5;
+    -fx-font-size: 12px;
+    -fx-padding: 0 0 0 16px;
+}
+
+/* Основная стеклянная панель */
+.main-glass-panel {
+    -fx-padding: 8;
+}
+
+/* Текстовые поля */
+.vesper-text-field, .message-input {
+    -fx-background-color: rgba(33, 33, 33, 0.9);
+    -fx-text-fill: #ECEFF1;
+    -fx-prompt-text-fill: #607D8B;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1;
+    -fx-padding: 8 10 8 10;
+    -fx-focus-color: #00BFFF;
+    -fx-faint-focus-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.40), 12, 0.3, 0, 6);
+    -fx-font-size: 13px;
+    -fx-background-insets: 0;
+}
+
+/* Улучшаем вид TextArea, чтобы вводимый текст был хорошо виден */
+.text-area {
+    -fx-background-color: transparent;
+}
+
+.text-area .content {
+    -fx-background-color: rgba(33, 33, 33, 0.9);
+}
+
+.text-area .text {
+    -fx-fill: #ECEFF1;
+}
+
+/* Чуть лучше читаемость поля ввода */
+.message-input {
+    -fx-highlight-fill: rgba(0, 191, 255, 0.35);
+    -fx-highlight-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+}
+
+/* Кнопки (основные) */
+.primary-button {
+    -fx-background-color: #00BFFF;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-padding: 8 18 8 18;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 18, 0.3, 0, 10);
+    -fx-cursor: hand;
+    -fx-font-size: 13px;
+}
+
+/* Вторичная кнопка (ссылка на регистрацию) */
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00BFFF;
+    -fx-font-size: 12px;
+    -fx-padding: 4 0 0 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-text-fill: #33CCFF;
+}
+
+.typing-label {
+    -fx-text-fill: #00BFFF;
+    -fx-font-size: 12px;
+}
+
+.typing-label:empty {
+    -fx-opacity: 0;
+}
+
+.unread-badge {
+    -fx-background-color: rgba(0, 191, 255, 0.25);
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 2 8 2 8;
+    -fx-background-radius: 999;
+}
+
+.contact-avatar-view {
+    -fx-background-color: rgba(0, 191, 255, 0.12);
+    -fx-background-radius: 999;
+}
+
+.contact-avatar-mini-view {
+    -fx-background-color: rgba(0, 191, 255, 0.12);
+    -fx-background-radius: 999;
+    -fx-background-insets: 0;
+}
+
+.online-dot {
+    -fx-background-radius: 999;
+    -fx-min-height: 8;
+    -fx-min-width: 8;
+    -fx-max-height: 8;
+    -fx-max-width: 8;
+}
+
+.online-dot.online {
+    -fx-background-color: rgba(76, 175, 80, 0.95);
+}
+
+.online-dot.offline {
+    -fx-background-color: rgba(96, 125, 139, 0.75);
+}
+
+.contact-name {
+    -fx-text-fill: #ECEFF1;
+    -fx-font-weight: 600;
+}
+
+.theme-choice {
+    -fx-background-color: rgba(33, 33, 33, 0.75);
+    -fx-text-fill: #ECEFF1;
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1;
+}
+
+.accent-picker {
+    -fx-background-color: rgba(33, 33, 33, 0.75);
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: #ECEFF1;
+}
+
+.chat-opacity-slider .track {
+    -fx-background-color: rgba(0, 191, 255, 0.2);
+}
+
+.chat-opacity-slider .thumb {
+    -fx-background-color: #00BFFF;
+}
+
+.primary-button:hover {
+    -fx-background-color: #33CCFF;
+    -fx-effect: dropshadow(gaussian, rgba(0, 191, 255, 0.8), 24, 0.5, 0, 0);
+}
+
+.primary-button:pressed {
+    -fx-background-color: #0099CC;
+    -fx-translate-y: 1;
+}
+
+.send-button {
+    -fx-min-width: 110;
+}
+
+.status-label {
+    -fx-text-fill: #EF9A9A;
+    -fx-font-size: 12px;
+}
+
+/* Контакты */
+.contacts-pane {
+    -fx-pref-width: 220;
+}
+
+.section-title {
+    -fx-text-fill: #CFD8DC;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 4 2;
+}
+
+.contacts-list {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-radius: 10;
+}
+
+.list-cell.contact-list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ECEFF1;
+    -fx-padding: 10 8 10 8;
+    -fx-font-size: 13px;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 8, 0.2, 0, 4);
+}
+
+.list-cell.contact-list-cell:hover {
+    -fx-background-color: rgba(0, 191, 255, 0.2);
+}
+
+.list-cell.contact-list-cell:selected {
+    -fx-background-color: rgba(0, 191, 255, 0.35);
+    -fx-text-fill: white;
+}
+
+/* Область сообщений */
+.chat-pane {
+    -fx-background-color: transparent;
+}
+
+.messages-scroll {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.05);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+}
+
+.messages-container {
+    -fx-padding: 12 10 12 10;
+    -fx-background-color: transparent;
+}
+
+/* Фон чата (картинка + затемнение через overlay) */
+.chat-stack {
+    -fx-background-color: transparent;
+}
+
+/* Полностью убираем дефолтные белые фоны ScrollPane */
+.scroll-pane,
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.messages-scroll .viewport {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.chat-bg-image {
+    -fx-opacity: 1.0;
+}
+
+.chat-bg-overlay {
+    -fx-fill: rgba(18, 18, 18, 0.55);
+}
+
+.messages-placeholder {
+    -fx-text-fill: #90A4AE;
+    -fx-opacity: 0.9;
+    -fx-padding: 16 12 16 12;
+    -fx-font-size: 13px;
+    -fx-background-color: rgba(33, 33, 33, 0.35);
+    -fx-background-radius: 12;
+}
+
+/* Бабблы сообщений */
+.message-bubble-in {
+    -fx-background-color: rgba(33, 150, 243, 0.35);
+    -fx-text-fill: #ECEFF1;
+    -fx-background-radius: 16 16 16 4;
+    -fx-padding: 8 12 8 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 16, 0.3, 0, 6);
+    -fx-max-width: 360;
+}
+
+.message-bubble-out {
+    -fx-background-color: rgba(0, 191, 255, 0.7);
+    -fx-text-fill: black;
+    -fx-background-radius: 16 16 4 16;
+    -fx-padding: 8 12 8 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 16, 0.3, 0, 6);
+    -fx-max-width: 360;
+}
+
+.message-time {
+    -fx-text-fill: #90A4AE;
+    -fx-font-size: 10px;
+    -fx-padding: 0 4 0 4;
+}
+
+.message-input {
+    -fx-pref-row-count: 2;
+}
+
+.app-title {
+    -fx-text-fill: #00BFFF;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.app-subtitle {
+    -fx-text-fill: #B0BEC5;
+    -fx-font-size: 13px;
+}
+
